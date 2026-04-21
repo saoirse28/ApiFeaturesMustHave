@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<!-- Asp.Versioning v7+ — replaces the deprecated Microsoft.AspNetCore.Mvc.Versioning -->
+		<PackageReference Include="Asp.Versioning.Mvc" Version="8.1.0" />
+		<PackageReference Include="Asp.Versioning.Mvc.ApiExplorer" Version="8.1.0" />
+
+		<!-- For Minimal APIs versioning support -->
+		<PackageReference Include="Asp.Versioning.Http" Version="8.1.0" />
+
+		<!-- Swagger / OpenAPI — one doc per version -->
+		<PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.0" />
+
+		<PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="10.1.7" />
+		<PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="10.1.7" />
+	</ItemGroup>
+
+</Project>

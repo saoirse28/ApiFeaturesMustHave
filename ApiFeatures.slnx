@@ -1,0 +1,13 @@
+<Solution>
+  <Project Path="ApiFeatures/ApiFeatures.csproj" />
+  <Project Path="APIVersioning/APIVersioning.csproj" />
+  <Project Path="Caching/Caching.csproj" />
+  <Project Path="ExceptionHandling/ExceptionHandling.csproj" />
+  <Project Path="FeatureManagement/FeatureManagement.csproj" />
+  <Project Path="HealthCheck/HealthCheckMetric.csproj" />
+  <Project Path="Observability/Observability.csproj" />
+  <Project Path="ProperLogging/ProperLogging.csproj" />
+  <Project Path="RateLimiting/RateLimiting.csproj" />
+  <Project Path="Resilience/Resilience.csproj" />
+  <Project Path="ServerSentEvents/ServerSentEvents.csproj" />
+</Solution>

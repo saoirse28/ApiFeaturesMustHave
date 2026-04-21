@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+  <!-- Built-in (no install needed) -->
+
+  <!-- UI dashboard (optional) -->
+  <PackageReference Include="AspNetCore.HealthChecks.UI" Version="8.0.1" />
+  <PackageReference Include="AspNetCore.HealthChecks.UI.Client" Version="8.0.1" />
+  <PackageReference Include="AspNetCore.HealthChecks.UI.InMemory.Storage" Version="8.0.1" />
+
+  <!-- Common ready-made checks -->
+  <PackageReference Include="AspNetCore.HealthChecks.SqlServer" Version="8.0.0" />
+  <PackageReference Include="AspNetCore.HealthChecks.Redis" Version="9.0.0" />
+  <PackageReference Include="AspNetCore.HealthChecks.Uris" Version="8.0.0" />
+
+  <!-- Metrics -->
+  <PackageReference Include="OpenTelemetry.Extensions.Hosting" Version="1.9.0" />
+  <PackageReference Include="OpenTelemetry.Instrumentation.AspNetCore" Version="1.9.0" />
+  <PackageReference Include="OpenTelemetry.Instrumentation.Runtime" Version="1.9.0" />
+  <PackageReference Include="OpenTelemetry.Exporter.Prometheus.AspNetCore" Version="1.9.0-beta.2" />
+</ItemGroup>
+
+</Project>

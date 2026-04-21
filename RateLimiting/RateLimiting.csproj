@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<UserSecretsId>0c705933-1737-4f48-bff6-88f7895c5292</UserSecretsId>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Folder Include="Filters\" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<!-- All rate limiting is built-in to .NET 7+. Zero extra packages needed. -->
+		<!-- System.Threading.RateLimiting      — included in .NET 7+ SDK -->
+		<!-- Microsoft.AspNetCore.RateLimiting  — included in ASP.NET Core 7+ SDK -->
+
+		<!-- Optional: Redis-backed distributed rate limiting for multi-instance deployments -->
+		<PackageReference Include="Microsoft.Azure.StackExchangeRedis" Version="3.3.1" />
+		<PackageReference Include="Microsoft.Extensions.Caching.StackExchangeRedis" Version="8.0.24" />
+
+		<PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="10.1.7" />
+		<PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="10.1.7" />
+	</ItemGroup>
+
+</Project>

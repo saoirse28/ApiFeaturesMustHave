@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<!-- Polly v8 core — pulled transitively, but pin explicitly -->
+		<PackageReference Include="Microsoft.Data.SqlClient" Version="7.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Http.Resilience" Version="10.5.0" />
+		<PackageReference Include="Polly" Version="8.6.6" />
+		<PackageReference Include="Polly.Extensions" Version="8.6.6" />
+
+		<!-- Microsoft's official Polly v8 integration for HttpClient (.NET 8) -->
+
+		<!-- Non-HTTP resilience pipelines (DB, Redis, message bus, etc.) -->
+
+		<!-- OpenTelemetry — Polly v8 emits metrics natively into this -->
+		<PackageReference Include="OpenTelemetry.Extensions.Hosting" Version="1.15.2" />
+		<PackageReference Include="OpenTelemetry.Instrumentation.AspNetCore" Version="1.15.1" />
+		<PackageReference Include="OpenTelemetry.Exporter.Prometheus.AspNetCore" Version="1.9.0-beta.2" />
+		<PackageReference Include="Polly.Testing" Version="8.6.6" />
+		<PackageReference Include="StackExchange.Redis" Version="2.12.14" />
+
+		<PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="10.1.7" />
+		<PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="10.1.7" />
+
+		<PackageReference Include="Microsoft.Azure.StackExchangeRedis" Version="3.3.1" />
+		<PackageReference Include="Microsoft.Extensions.Caching.StackExchangeRedis" Version="8.0.24" />
+	</ItemGroup>
+
+</Project>

@@ -1,0 +1,6 @@
+@ProperLogging_HostAddress = http://localhost:5075
+
+GET {{ProperLogging_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
